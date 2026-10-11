@@ -40,7 +40,7 @@ def anime_card(anime):
 
     card = f'<a href="{url}">'
     if image:
-        card += f'<img src="{image}" width="120" height="180" alt="{title}" />'
+        card += f'<img src="{image}" width="120" height="180" alt="{title} style="display:block" />'
     card += f"</a><br><a href=\"{url}\"><b>{title}</b></a>"
 
     return f'<td align="center" valign="top">{card}</td>'
