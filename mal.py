@@ -1,6 +1,7 @@
 #file to scrape myanimelist
 import json
 import time
+from html import escape
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 from bs4 import BeautifulSoup
@@ -32,50 +33,51 @@ def anime_image(anime):
     )
 
 
-def anime_card(anime, extra=""):
-    title = anime.get("title", "Unknown title")
-    url = anime.get("url", "#")
-    image = anime_image(anime)
-
-    # Escape Markdown characters in titles.
-    title = title.replace("[", "\\[").replace("]", "\\]")
+def anime_card(anime):
+    title = escape(anime.get("title") or "Unknown title", quote=True)
+    url = escape(anime.get("url") or "#", quote=True)
+    image = escape(anime.get("image") or "", quote=True)
 
     card = f'<a href="{url}">'
     if image:
-        card += (
-            f'<img src="{image}" width="120" '
-            f'alt="{title}" />'
-        )
+        card += f'<img src="{image}" width="120" alt="{title}" />'
     card += f"</a><br><a href=\"{url}\"><b>{title}</b></a>"
 
-    if extra:
-        card += f"<br>{extra}"
-
-    return f'<td align="center">{card}</td>'
+    return f'<td align="center" valign="top">{card}</td>'
 
 
-def scrape_anime_list():
+def scrape_top_ten():
     base = f"https://myanimelist.net/profile/{MAL_USERNAME}"
 
     soup = BeautifulSoup(urlopen(base), "html.parser")
-    results_top_ten = []
+    results = []
 
     for row in soup.select("#anime_favorites li.btn-fav"):
         title = row.select_one("a .title")
         link = row.select_one("a.link")
         image = row.select_one("img.image")
 
-        results_top_ten.append({
+        results.append({
             "title": title.get_text(strip=True) if title else "Unknown Anime",
             "url": link.get("href", "#") if link else "#",
-            "image": image.get("data_src") or image.get("src", "") if image else "",
+            "image": image.get("data-src") if image else "",
         })
 
-    return results_top_ten
+    return results
 
-def make_section():
-    # design of the section
-    pass
+
+def make_section(anime_list):
+    if not anime_list:
+        return "<p>No anime favorites found.</p>"
+
+    rows = []
+    for index in range(0, len(anime_list), 5):
+        row_anime = anime_list[index:index + 5]
+        cards = "".join(anime_card(anime) for anime in row_anime)
+        rows.append(f"<tr>{cards}</tr>")
+
+    return "<table>\n" + "\n".join(rows) + "\n</table>"
+
 
 def main():
     with open(README_FILE, "r", encoding="utf-8") as file:
@@ -93,21 +95,19 @@ def main():
         raise ValueError("Anime markers are in the wrong order.")
 
     print("Scraping MyAnimeList...")
-    print(scrape_anime_list())
+    section = make_section(scrape_top_ten())
+    updated = (
+        readme[:start_index]
+        + "\n\n"
+        + section
+        + "\n\n"
+        + readme[end_index:]
+    )
 
-    # section = make_section()
-    # updated = (
-    #     readme[:start_index]
-    #     + "\n\n"
-    #     + section
-    #     + "\n\n"
-    #     + readme[end_index:]
-    # )
+    with open(README_FILE, "w", encoding="utf-8") as file:
+        file.write(updated)
 
-    # with open(README_FILE, "w", encoding="utf-8") as file:
-    #     file.write(updated)
-
-    # print("Anime section updated successfully.")
+    print("Anime section updated successfully.")
 
 
 if __name__ == "__main__":
