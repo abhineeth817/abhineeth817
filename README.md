@@ -1,5 +1,5 @@
-## Hi there 👋
 
+## So here's my Top 10 anime
 <!-- ANIME-START -->
 
 <table>
