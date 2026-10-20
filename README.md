@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/abhineeth817/abhineeth817/main/header-1.svg" width="100%" alt="Terminal Boot">
+<img src="https://raw.githubusercontent.com/abhineeth817/abhineeth817/main/header.svg" width="100%" alt="Terminal Boot">
 
 <br/>
 
@@ -18,4 +18,3 @@
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/abhineeth817/abhineeth817/main/header-2.svg" width="100%" alt="Terminal Boot">
