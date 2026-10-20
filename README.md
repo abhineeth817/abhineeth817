@@ -1,5 +1,59 @@
+ <div align="center">
 
-## So here's my Top 10 anime
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050505,50:003B2F,100:00FF9C&height=180&section=header&text=ABHINEETH&fontSize=42&fontColor=00FF9C&fontAlignY=38&desc=Developer%20%7C%20Cybersecurity%20Enthusiast&descAlignY=60&descSize=16" width="100%" />
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3000&pause=1000&color=00FF9C&center=true&vCenter=true&width=600&lines=Welcome+to+my+GitHub;Building+projects+and+learning+every+day;Exploring+Cybersecurity+%26+Software+Development" alt="Typing animation" />
+
+</div>
+
+> whoami
+
+Name       : Abhineeth
+Role       : Developer | Cybersecurity Enthusiast
+Interests  : Security, Programming, AI
+Currently  : Learning, building, experimenting
+
+Hey, I'm a developer who enjoys doing things my own way.
+
+> tech_stack
+
+Languages
+Python
+C/C++
+C#
+Java
+
+
+Tools & Technologies
+Flutter
+React
+Burpsuite for vulnerability testing
+Linux
+
+
+> github_stats
+
+<div align="center">
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=abhineeth817&show_icons=true&hide_border=true&bg_color=0A0A0A&title_color=00FF9C&icon_color=00FF9C&text_color=E0E0E0" alt="GitHub stats" />
+
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhineeth817&layout=compact&hide_border=true&bg_color=0A0A0A&title_color=00FF9C&text_color=E0E0E0" alt="Most used languages" />
+
+</div>
+
+> beyond_the_terminal
+
+When I'm not coding, I enjoy exploring technology, learning new things, watching anime and playing Valorant.
+
+
+<div align="center">
+
+
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FF9C,50:003B2F,100:050505&height=100&section=footer" width="100%" />
+
+</div>
+## Idk what else to put here So here's my Top 10 anime
 <!-- ANIME-START -->
 
 <table>
