@@ -1,4 +1,4 @@
- <div align="center">
+  <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050505,50:003B2F,100:00FF9C&height=180&section=header&text=ABHINEETH&fontSize=42&fontColor=00FF9C&fontAlignY=38&desc=Developer%20%7C%20Cybersecurity%20Enthusiast&descAlignY=60&descSize=16" width="100%" />
 
@@ -6,32 +6,35 @@
 
 </div>
 
-> whoami
+## `> whoami`
 
+```text
 Name       : Abhineeth
 Role       : Developer | Cybersecurity Enthusiast
 Interests  : Security, Programming, AI
 Currently  : Learning, building, experimenting
+```
 
-Hey, I'm a developer who enjoys doing things my own way.
+Hi! I'm a developer interested in understanding how systems work, building useful software, and exploring cybersecurity. This profile is where I share my projects, experiments, and things I learn along the way.
 
-> tech_stack
+## `> tech_stack`
 
-Languages
-Python
-C/C++
-C#
-Java
+**Languages**
 
+![Python](https://img.shields.io/badge/Python-0A0A0A?style=flat-square&logo=python&logoColor=00FF9C)
+![Java](https://img.shields.io/badge/Java-0A0A0A?style=flat-square&logo=openjdk&logoColor=00FF9C)
+![CSharp](https://img.shields.io/badge/C%23-0A0A0A?style=flat-square&logo=csharp&logoColor=00FF9C)
+![JavaScript](https://img.shields.io/badge/JavaScript-0A0A0A?style=flat-square&logo=javascript&logoColor=00FF9C)
 
-Tools & Technologies
-Flutter
-React
-Burpsuite for vulnerability testing
-Linux
+**Tools & Technologies**
 
+![Git](https://img.shields.io/badge/Git-0A0A0A?style=flat-square&logo=git&logoColor=00FF9C)
+![Linux](https://img.shields.io/badge/Linux-0A0A0A?style=flat-square&logo=linux&logoColor=00FF9C)
+![Docker](https://img.shields.io/badge/Docker-0A0A0A?style=flat-square&logo=docker&logoColor=00FF9C)
+![Wireshark](https://img.shields.io/badge/Wireshark-0A0A0A?style=flat-square&logo=wireshark&logoColor=00FF9C)
+![Splunk](https://img.shields.io/badge/Splunk-0A0A0A?style=flat-square&logo=splunk&logoColor=00FF9C)
 
-> github_stats
+## `> github_stats`
 
 <div align="center">
 
@@ -41,9 +44,10 @@ Linux
 
 </div>
 
-> beyond_the_terminal
+## `> beyond_the_terminal`
 
-When I'm not coding, I enjoy exploring technology, learning new things, watching anime and playing Valorant.
+When I'm not coding, I enjoy exploring technology, learning new things, and watching anime.
+
 
 
 <div align="center">
@@ -61,4 +65,3 @@ Idk what else to put here So here's my Top 10 anime
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FF9C,50:003B2F,100:050505&height=100&section=footer" width="100%" />
 
 </div>
-
