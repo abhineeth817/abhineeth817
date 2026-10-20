@@ -18,4 +18,4 @@
 
 <br/>
 
-For an interactive terminal where you can know more about me -> <text href="https://abhineeth817.github.io/terminal_profile_website/">Click here</text>
+For an interactive terminal where you can know more about me -> <a href="https://abhineeth817.github.io/terminal_profile_website/">Click here</a>
