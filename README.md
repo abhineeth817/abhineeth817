@@ -48,12 +48,7 @@ When I'm not coding, I enjoy exploring technology, learning new things, watching
 
 <div align="center">
 
-
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FF9C,50:003B2F,100:050505&height=100&section=footer" width="100%" />
-
-</div>
-## Idk what else to put here So here's my Top 10 anime
+Idk what else to put here So here's my Top 10 anime
 <!-- ANIME-START -->
 
 <table>
@@ -62,3 +57,8 @@ When I'm not coding, I enjoy exploring technology, learning new things, watching
 </table>
 
 <!-- ANIME-END -->
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FF9C,50:003B2F,100:050505&height=100&section=footer" width="100%" />
+
+</div>
+
